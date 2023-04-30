@@ -40,3 +40,10 @@ function playRound(playerSelection, computerSelection) {
     let output = `You ${win ? "win!" : "lose!"} ${capitalizeFirstLetter(playerSelection)} ${win ? "beats" : "loses to"} ${computerSelection}.`;
     return output;
 }
+
+function game(){
+    for (let i =0 ; i < 5 ; i++){
+        let playerSelection = prompt("Choose rock paper or scissors!");
+        console.log(playRound(playerSelection, getComputerChoice()));
+    }
+}
